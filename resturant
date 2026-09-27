@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sameer's Restaurant</title>
+    <title>Sameer's Amazing Restaurant</title>
     <style>
         * {
             margin: 0;
@@ -38,7 +38,7 @@
 <body>
 
     <div class="navbar">
-        <h1>🍽️ Sameer's Restaurant</h1>
+        <h1>🍽️ Sameer's Amazing Restaurant</h1>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#menu">Menu</a></li>
