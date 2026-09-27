@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer's Restaurant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial;
+        }
+        .navbar {
+            background-color: #2c2c2c;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar h1 {
+            font-size: 24px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>🍽️ Sameer's Restaurant</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="home" style="background-color: #444; color: white; text-align: center; padding: 80px 20px;">
+        <h2 style="font-size: 36px;">Khush Aamdeed Sameer's Restaurant Mein</h2>
+        <p style="font-size: 18px; margin-top: 10px;">Behtareen zaiqa, garam khana, aur mehmaan nawazi</p>
+        <button style="margin-top: 20px; padding: 12px 25px; background-color: orange; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">Menu Dekhein</button>
+    </div>
+
+    <div id="menu" style="padding: 50px 20px; text-align: center;">
+        <h2 style="font-size: 30px; margin-bottom: 30px;">Hamara Menu</h2>
+
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+
+            <div style="background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 20px; width: 220px;">
+                <h3>Karahi Gosht</h3>
+                <p style="color: gray; margin: 10px 0;">Mazedar aur masaledar karahi</p>
+                <p style="font-weight: bold; color: orange;">Rs. 800</p>
+            </div>
+
+            <div style="background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 20px; width: 220px;">
+                <h3>Biryani</h3>
+                <p style="color: gray; margin: 10px 0;">Khushbudar chawal gosht ke sath</p>
+                <p style="font-weight: bold; color: orange;">Rs. 350</p>
+            </div>
+
+            <div style="background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 20px; width: 220px;">
+                <h3>Nihari</h3>
+                <p style="color: gray; margin: 10px 0;">Slow-cooked traditional nihari</p>
+                <p style="font-weight: bold; color: orange;">Rs. 450</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="about" style="background-color: #f0f0f0; padding: 50px 20px; text-align: center;">
+        <h2 style="font-size: 30px; margin-bottom: 15px;">Hamare Baare Mein</h2>
+        <p style="max-width: 600px; margin: auto; color: #444; line-height: 1.6;">
+            Sameer's Restaurant 2020 se apne shehar mein behtareen desi khana pesh kar raha hai. 
+            Hum taaza ajza (fresh ingredients) aur khaandani nuskhon (family recipes) se khana banate hain, 
+            taake har mehmaan ko ghar jaisa zaiqa mile.
+        </p>
+    </div>
+
+    <div id="contact" style="padding: 50px 20px; text-align: center;">
+        <h2 style="font-size: 30px; margin-bottom: 20px;">Rabta Karein</h2>
+
+        <div style="max-width: 400px; margin: auto; display: flex; flex-direction: column; gap: 12px;">
+            <input type="text" id="userName" placeholder="Aap ka naam" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 15px;">
+            <input type="email" id="userEmail" placeholder="Aap ka email" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 15px;">
+            <textarea id="userMessage" placeholder="Apna paigham likhein" rows="4" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 15px;"></textarea>
+            <button onclick="bhejoPaigham()" style="padding: 12px; background-color: orange; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">Paigham Bhejein</button>
+        </div>
+    </div>
+
+    <script>
+        function bhejoPaigham() {
+            let naam = document.getElementById("userName").value;
+            let email = document.getElementById("userEmail").value;
+
+            if (naam === "" || email === "") {
+                alert("Meherbani kar ke naam aur email zaroor likhein!");
+            } else {
+                alert("Shukriya " + naam + "! Aap ka paigham mil gaya hai.");
+            }
+        }
+    </script>
+
+</body>
+</html>
